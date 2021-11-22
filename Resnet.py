@@ -36,7 +36,7 @@ from mindspore.train.serialization import load_checkpoint, load_param_into_net
 import mindspore.ops as ops
 
 # 设置MindSpore的执行模式和设备
-context.set_context(mode=context.GRAPH_MODE, device_target="CPU")
+context.set_context(mode=context.GRAPH_MODE, device_target="Ascend")
 
 cfg = edict({
     'data_path': 'train',  # 训练数据集
